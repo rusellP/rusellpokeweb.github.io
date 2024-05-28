@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Eeveewikia
+        </title>
+        <link rel="shortcut icon" type="image/png" href="icons/icons8-eevee-48.png">
+
+        <style>
+
+          @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+            .header {
+                background-color: #C6AC8F;
+                padding: 15px;
+                text-align: center;
+            }
+            
+            h1 {
+                font-family: 'Rubik 80s Fade', cursive;
+                font-weight: 200;
+                font-style: bold;
+                font-size: 120px;
+                color: #EAE0D5;
+            }
+
+            body {
+              background-color: #5E503F;
+            }
+
+            /* .background-image {
+                background: url(https://wallpaperaccess.com/full/1805302.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-size: cover;
+                height: 100vh;
+            } */
+
+            .navmenu {
+                overflow: hidden;
+                background-color: #C6AC8F;
+                font-family: 'VT323', monospace;
+                font-size: large;
+            }
+
+            .navmenu a {
+                float: left;
+                display: block;
+                color: #5E503F;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .navmenu a:hover {
+                background-color: #EAE0D5;
+                color: #5E503F;
+                transition: background-color 0.5s ease;
+            }
+
+            /* .columnA, .columnB, .columnC {
+                float: left;
+                width: 31%;
+                padding: 15px;
+                text-align: justify;
+            } */
+
+            h2 {
+                color: #EAE0D5;
+                text-align: center;
+                font-size: large;
+                font-weight: 100; 
+                font-style: bold;
+                font-family: 'Rubik Vinyl', cursive;
+            }
+
+            @media screen and (max-width:600px) {
+                .columnA, .columnB, .columnC {
+                        width: 50%;
+                }
+            }
+
+            @media screen and (max-width:400px) {
+                .columnA, .columnB, .columnC {
+                    width: 100%;
+                }
+            }
+
+            .container {
+                margin: 120px;
+                width: 75%;
+                padding: 5px;
+            }
+
+            .container p {
+              color: #EAE0D5;
+            }
+
+            img {
+                float: left;
+                width: 250px;
+                height: 150px;
+                padding: 0 10px 0 0;
+            }
+
+            .columnA {
+                text-align: justify;
+                font-family: 'Merriweather', serif;
+                font-size: small;
+            }
+
+            .columnB {
+                text-align: justify;
+                font-family: 'Merriweather', serif;
+                font-size: small;
+            }
+
+            .columnC {
+                text-align: justify;
+                font-family: 'Merriweather', serif;
+                font-size: small;
+            }
+
+            .footerstart {
+                height: 200px;
+                width: 100%;
+                background-color: #f0f0f0;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 50px 0px;
+}
+
+.footerstart {
+  margin: 0;
+  padding: 0;
+  font-family: 'Black Han Sans', sans-serif;
+  background-color: #C6AC8F;
+} 
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #C6AC8F;
+  font-family: 'VT323', monospace;
+  font-size: small;
+}
+
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  font-family: 'Nanum Myeongjo', serif;;
+  padding: 20px 0px 5px 0px;
+  color: #C6AC8F;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #EAE0D5;
+  font-size: 7px;
+  font-family: inherit;
+  font-family: 'Press Start 2P', cursive;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.footer .col ul li:hover {
+  color: #333;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+        </style>
+    </head>
+    <body>
+      <!-- <div class="background-image"></div> -->
+
+        <div class="header">
+            <h1>
+                EEVEEWIKIA
+            </h1>    
+        </div>
+
+        <div class="navmenu">
+            <a href="./pokedex.html">Pokémon Identifier</a>
+            <a href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki" target="_blank">Pokémon Wiki</a>
+            <a href="./trainers.html">Trainer's Portal</a>
+            <a href="./front.html">Eeveon</a>
+            <a href="#">Trainers Hub</a>
+            <a href="#">Forums</a>
+            <a href="#">Games</a>
+            <a href="#">Roms</a>
+            <a href="#">News</a>
+            <input class="search-icon"
+            type="search" placeholder="Search">
+        </div><br>
+        
+        <div class="container">
+        <img src="http://1.bp.blogspot.com/-IZ1L2g7eWqM/T4mMVt7DwmI/AAAAAAAAGps/kCnO-cuV1dE/s320/13343768550073.jpg" alt="">
+        <div class="row">
+            <div class="columnA">
+                <h2>Pokémon History</h2>
+        <p>
+            Pokémon was invented by a Japanese man named Satoshi Tajiri and his friend Ken Sugimori, who is an illustrator.
+            
+            Back in 1982 Satoshi started a gaming magazine together with his friends called Game Freak, but after a while he decided
+            to start making his own video games, instead of writing about them.
+            
+            In 1989 Satoshi turned Game Freak into a gaming company, and together with his friends they released a few games such as
+            Pulseman, Yoshi and Mario & Wario, which did pretty well.
+            
+            In the early 1990s, inspired by his childhood exploring forests and finding bugs and tadpoles, Satoshi came up with the
+            idea for Pocket Monsters (or as it's better known Pokémon), and pitched it to Nintendo.
+            <br>
+            <br>
+
+            <img src="https://swall.teahub.io/photos/small/95-957728_all-legendary-pokemon-in-one.jpg" alt="">
+            The Pokémon franchise began as Pocket Monsters: Red and Green (later released outside of Japan as Pokémon Red and Blue),
+            a pair of video games for the original Game Boy handheld system that were developed by Game Freak and published by
+            Nintendo in February 1996. Pokémon soon became a media mix franchise adapted into various different media, with the
+            Pokémon Trading Card Game released in October 1996, the Pokémon Adventures manga first released in Japan in March 1997,
+            and the Pocket Monsters: Original Series released in April 1997. Pocket Pikachu was released in Japan in March 1998,
+            with the July 18: with the first ever Pokémon movie, Pokémon The First Movie: Mewtwo Strikes Back, first released in
+            Japan in July 1998.
+            <br>
+            <br>
+            In 1998, Nintendo spent $25 million promoting Pokémon in the United States in partnership with Hasbro, KFC, and
+            others. Nintendo initially feared that Pokémon was too Japanese for Western tastes but Alfred Kahn, then CEO of
+            4Kids Entertainment convinced the company otherwise. The one who spotted Pokémon's potential in the United States
+            was Kahn's colleague Thomas Kenney.
+            <br>
+            <br>
+
+            <img src="https://images3.alphacoders.com/276/276507.jpg" alt="">
+            In November 2005, 4Kids Entertainment, which had managed the non-game related licensing of Pokémon, announced that it
+            had agreed not to renew the Pokémon representation agreement. The Pokémon Company International oversees all Pokémon
+            licensing outside Asia. In 2006, the franchise celebrated its tenth anniversary with the release of Pokémon Diamond
+            and Pearl. In 2016, the Pokémon Company celebrated Pokémon's 20th anniversary by airing an ad during Super Bowl 50
+            in January and re-releasing the first Pokémon video games 1996 Game Boy games Pokémon Red, Green (only in Japan), and
+            Blue, and the 1998 Game Boy Color game Pokémon Yellow for the Nintendo 3DS on February 26, 2016. The mobile
+            augmented reality game Pokémon Go was released in July 2016. Pokémon Sun and Moon also released in the same year.
+            The first live-action film in the franchise, Pokémon Detective Pikachu, based on the 2018 Nintendo 3DS spin-off game
+            Detective Pikachu, was released in 2019. The eighth generation of core series games began with Pokémon Sword and
+            Shield, released worldwide on the Nintendo Switch on November 15, 2019.
+        </p>
+            </div>
+        </div>
+        <br>
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div class="columnB">
+            <h2>Pokémon: Indigo League</h2>
+        <p>
+            Pokémon: Indigo League (originally aired simply as Pokémon) is the first season of the Pokémon animated television
+            series and the first season of Pokémon: The Original Series, known in Japan as Pocket Monsters (ポケットモンスター, Poketto
+            Monsutā). It originally aired in Japan on TV Tokyo from April 1, 1997, to January 21, 1999. It later aired in the United
+            States in first-run syndication from September 8 to November 20, 1998, and on Kids' WB/The WB from February 13 to
+            November 27, 1999, concluding with the airing of the previously unreleased episode 18 on June 24, 2000. The first season
+            premiered in South Korea on Seoul Broadcasting System from July 14, 1999, to June 14, 2000. It premiered in India on
+            Cartoon Network on May 12, 2003.
+            <br>
+            <br>
+            It's Ash Ketchum's tenth birthday, and he's ready to do what many 10-year-olds in the Kanto region set out to do—become
+            a Pokémon Trainer! Things don't go exactly the way he planned when he ends up with a Pikachu instead of a standard first
+            Pokémon, and winning Gym Badges turns out to be much tougher than he thought. Luckily he's got former Gym Leaders Brock
+            and Misty at his side, along with a bevy of new Pokémon friends, including Bulbasaur, Squirtle, and Charmander.
+            <br>
+            <br>
+
+            <img src="https://pokeonecommunity.com/uploads/pokemon/location/Indigo%20Plateau.jpg" alt="">
+            This season, the narrator of the Pokémon anime (voiced in Japanese by Unshō Ishizuka, and in English by Rodger Parsons)
+            will follow the beginning adventures of Ash Ketchum (voiced in Japanese by Rika Matsumoto, and in English by Veronica
+            Taylor), a 10-year-old aspiring Pokémon trainer from Pallet Town who is given a Pikachu (voiced by Ikue Ōtani) by
+            Pokémon researcher Professor Oak to begin his Pokémon journey. Ash is driven by his desire to win the Indigo Plateau's
+            Pokémon League, a challenging tournament for outstanding Pokémon trainers who compete against each other in Pokémon
+            battles. To qualify for the tournament, Ash must collect the required number of gym badges, which are tokens earned
+            after defeating each of the Kanto region's elite Pokémon gym leaders. Early in the season, Ash befriends the water-type
+            Pokémon trainer Misty, who befriends Ash in hopes of him replacing her destroyed bicycle, and Brock, a Pokémon breeder
+            who is the leader of the Pewter City gym.
+        </p>
+        </div>
+        <br>
+        <img src="https://assets.reedpopcdn.com/Pokemon-Scarlet-Violet-Legendary-Pokemon-Header.jpg/BROK/thumbnail/1600x900/quality/100/Pokemon-Scarlet-Violet-Legendary-Pokemon-Header.jpg">
+        <div class="columnC">
+            <h2>Pokémon Latest Game</h2>
+
+        <p>
+            Pokémon Scarlet and Pokémon Violet are 2022 role-playing video games developed by Game Freak and published by Nintendo
+            and The Pokémon Company for the Nintendo Switch. They are the first instalments in the ninth generation of the Pokémon
+            video game series.
+            <br>
+            <br>
+            Unlike the previous instalments in the Pokémon franchise, Scarlet and Violet take place in an open world. The games take
+            place in the Paldea region, based on the Iberian Peninsula. There are three separate stories the player can follow.
+            Scarlet and Violet introduce 103 new Pokémon, alongside two new regional forms. Also introduced are time-displaced
+            creatures known as Paradox Pokémon, and the Terastal phenomenon, which allows a Pokémon to transform into its
+            exclusive "Tera Type". The games maintain features from previous modern Pokémon games, including large open areas and
+            Pokémon appearing in the overworld.
+            <br>
+            <br>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzy3Obmvv0JKKAQ8-Es_HdMyb8WgUUHGRIA&usqp=CAU" alt="">
+            Scarlet and Violet received mixed reviews from critics. The games were praised for their open world formula and story,
+            while their graphics and technical problems at launch received criticism. The games sold over 10 million copies in their
+            first three days, making them Nintendo's biggest launch of all time.
+            <br>
+            <br>
+            According to The Pokémon Company, Scarlet and Violet are the most pre-ordered titles in the series' history. Within
+            three days of its release, the games had sold over 10 million copies worldwide, including 4.05 million in Japan alone.
+            The sales figure was the highest of any software on any Nintendo platform within three days, and the best launch
+            of any console-exclusive game in history. The games were the best-selling video game titles of 2022 in Japan.
+        </p>
+        </div>
+
+        <div class="footerstart">
+            
+        </div>
+        <div class="footer">
+            <div class="contain">
+                <div class="col">
+                    <h1>Eeveewikia</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Learn More</li>
+                        <li>Pokémon Identifier</li>
+                        <li>Trainer's Hub</li>
+                    </ul>
+        </div>
+
+        <div class="col">
+            <h1>References</h1>
+            <ul>
+                <li>Pokémon Wiki</li>
+                <li>Bulbapedia</li>
+                <li>Wallpaperacess</li>
+                <li>Wallpaperflare</li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h1>Community</h1>
+            <ul>
+                <li>Support</li>
+                <li>Help</li>
+                <li>Trainer's Info</li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h1>Social</h1>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Google</li>
+                <li>Instagram</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+    </body>
+</html>
